@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="~/img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Identification Portal</title>
+    <!-- Custom fonts for this template-->
+    <link href="~/Content/CustomStyling/all.min.css" rel="stylesheet" />
+    <!-- Page level plugin CSS-->
+    <link href="~/Content/CustomStyling/dataTables.bootstrap4.css" rel="stylesheet" />
+    <!-- Custom styles for this template-->
+    <link href="~/Content/CustomStyling/axa-portal.css" rel="stylesheet" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <style>
+        input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+<body>
+
+    @Html.Partial("~/Views/Shared/_Navbar.cshtml")
+
+    <div id="wrapper">
+
+        @Html.Partial("~/Views/Shared/_Menu.cshtml")
+
+        @RenderBody()
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Scripts/CustomJavaScript/plugins/jquery.min.js"></script>
+    <script src="~/Scripts/CustomJavaScript/plugins/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="~/Scripts/CustomJavaScript/plugins/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="~/Scripts/CustomJavaScript/plugins/jquery.dataTables.js"></script>
+    <script src="~/Scripts/CustomJavaScript/plugins/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="~/Scripts/CustomJavaScript/axa-portal.min.js"></script>
+    <!-- Demo scripts for this page-->
+    <script src="~/Scripts/CustomJavaScript/demo/datatables-demo.js"></script>
+    <script src="~/Scripts/CustomJavaScript/plugins/sweetmodal.js"></script>
+
+    <script src="~/CustomJS/portal.js"></script>
+
+</body>
+</html>
